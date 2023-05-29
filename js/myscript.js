@@ -51,3 +51,31 @@ const teamMate = [
         
 ];
 console.log(teamMate);
+
+teamMate.picture
+
+
+
+const containerElement = document.querySelector('div');
+
+for (let index = 0; index < teamMate.length; index++) {
+    const nameElement = teamMate[index].name;
+    const roleElement = teamMate[index].role;
+    const pictureElement = teamMate[index].picture;
+
+
+    
+    const divElement = document.createElement('div');
+    divElement.classList.add('box');
+    divElement.append(teamMate[index]);
+
+    //creo all'interno del div creato precedentemente un p dove ci metterò il nome del dipendente e la propria mansione
+    divElement.innerHTML = `<p>` + nameElement + `</p>` + `<p>` + roleElement + `</p>`;
+
+    containerElement.appendChild(divElement);
+
+}    
+
+for (const key in teamMate){
+    console.log(key, ':', teamMate[key]);
+}
