@@ -8,10 +8,14 @@ div.container{
 
 div.box{
     width: calc(100% / 3 - .5rem);
-    background-color: red;
+    background-color: white;
     height: 400px;
 }
 
 div .box p{
     text-align: center;
+}
+
+img{
+    width: 100%;
 }
