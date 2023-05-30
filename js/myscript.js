@@ -46,7 +46,7 @@ const teamMate = [
     {
     name: 'Barbara Ramos',
     role: 'Graphic Designer',
-    picture: 'barbara-ramos-graphic-designer.jpg'
+    picture: '../img 2/barbara-ramos-graphic-designer.jpg'
     },
         
 ];
@@ -70,7 +70,7 @@ for (let index = 0; index < teamMate.length; index++) {
     divElement.append(teamMate[index]);
 
     //creo all'interno del div creato precedentemente un p dove ci metterò il nome del dipendente e la propria mansione
-    divElement.innerHTML = `<p>` + nameElement + `</p>` + `<p>` + roleElement + `</p>`;
+    divElement.innerHTML = `<p>` + nameElement + `</p>` + `<p>` + roleElement + `</p>` + pictureElement;
 
     containerElement.appendChild(divElement);
 
